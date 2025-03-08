@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #000, #fff); /* Top-left black to bottom-right white */
+    font-family: Arial, sans-serif;
+}
+.login-box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: linear-gradient(45deg, #f0f0f0, #000, #fff); /* Light gray, black, and white mix */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.login-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.4);
+}
+.content {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.input-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.input-box input:focus {
+    border-color: cyan;
+}
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, cyan, magenta);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.login-button:hover {
+    background: linear-gradient(45deg, magenta, cyan);
+    transform: translateY(-3px);
+}
